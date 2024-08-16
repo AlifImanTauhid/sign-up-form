@@ -2,6 +2,7 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+	text-decoration: none;
 }
 
 @font-face {
@@ -22,18 +23,18 @@
 }
 
 .transparent {
-	background-color: rgba(0, 0, 0, 0.3);
+	background-color: rgba(0, 0, 0, 0.5);
 	display: flex;
 	justify-content: center;
 	position: absolute;
 	width: 35vw;
-	top: 7em;
+	top: 10em;
 }
 
 .logo-title {
 	font-size: 4rem;
 	color: white;
-	font-family: Norse-Bold;
+	font-family: "Norse";
 }
 
 img {
@@ -53,6 +54,7 @@ img {
 	flex-direction: column;
 	background-color: rgb(243, 243, 243);
 	width: 65vw;
+	color: var(--color);
 }
 
 .right-container {
@@ -116,11 +118,13 @@ label {
 	margin-top: 30px;
 	background-image: linear-gradient(
 		to left top,
-		rgb(139, 74, 39),
-		rgb(40, 99, 112) 70%
+		RGB(56, 103, 24) 30%,
+		RGB(19, 65, 0)
 	);
 	color: white;
 	border: none;
+	border-radius: 10px;
+	cursor: pointer;
 }
 
 p {
